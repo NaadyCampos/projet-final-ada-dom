@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Churrascomêtro</title>
+</head>
+
+<body>
+
+    <form id="formularioCadastro">
+        <section class="formulario">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Insira seu nome" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Insira seu email" required>
+            </div>
+            <div>
+                <label for="cpf">CPF:</label>
+                <input type="number" id="cpf" name="cpf" placeholder="Digite somente números" required>
+            </div>
+            <div>
+                <label for="cep">CEP:</label>
+                <input type="number" id="cep" name="cep" placeholder="Digite somente os números" required>
+            </div>
+            <div>
+                <label for="termos">Aceito receber e-mails com promoções:</label>
+                <input type="checkbox" checked name="termos" id="termos" required>
+            </div>
+            <button type="submit" id="enviarCadastro">Enviar</button>
+            <button type="reset" id="limparCadastro">Limpar</button>
+        </section>
+    </form>
+
+
+    <form id="formularioPessoas" style="display: none;">
+        <section class="formulario">
+            <div>
+                <label for="homens">Homens: <span id="homensValor">0</span></label>
+                <input type="range" id="homens" name="homens" value="0" min="0" step="1" max="100" required>
+            </div>
+            <div>
+                <label for="mulheres">Mulheres: <span id="mulheresValor">0</span></label>
+                <input type="range" id="mulheres" name="mulheres" value="0" min="0" step="1" max="100" required>
+            </div>
+            <div>
+                <label for="criancas">Crianças: <span id="criancasValor">0</span></label>
+                <input type="range" id="criancas" name="criancas" value="0" min="0" step="1" max="100" required>
+            </div>
+            <div>
+                <label for="alcool">Bebem bebidas alcoolicas: <span id="alcoolValor">0</span></label>
+                <input type="range" id="alcool" name="alcool" value="0" min="0" step="1" required>
+            </div>
+            <button type="submit" id="enviarPessoas">Enviar</button>
+            <button type="reset" id="limparPessoas">Limpar</button>
+        </section>
+    </form>
+
+    <table id="listaDeItens" style="display: none;">
+        <caption>
+            Tabela de itens e valores
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Itens</th>
+                <th scope="col">Quantidade</th>
+                <th scope="col">Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Carne</th>
+                <td>Quantidade</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <th scope="row">cerveja</th>
+                <td>Quantidade</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <th scope="row">sal grosso</th>
+                <td>Quantidade</td>
+                <td>29</td>
+            </tr>
+            <tr>
+                <th scope="row">refrigerante</th>
+                <td>Quantidade</td>
+                <td>36</td>
+            </tr>
+            <tr>
+                <th scope="row">água</th>
+                <td>Quantidade</td>
+                <td>36</td>
+            </tr>
+            <tr>
+                <th scope="row">carvão</th>
+                <td>Quantidade</td>
+                <td>36</td>
+            </tr>
+            <tr>
+                <th scope="row">gelo</th>
+                <td>Quantidade</td>
+                <td>36</td>
+            </tr>
+            <tr>
+                <th scope="row">pão de alho</th>
+                <td>Quantidade</td>
+                <td>36</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
